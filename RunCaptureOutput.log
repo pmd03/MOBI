@@ -1,4 +1,4 @@
-C:\Users\PaulM\PycharmProjects\pythonProject\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2020.3.3\plugins\python\helpers\pydev\pydevconsole.py" --mode=client --port=50699
+C:\Users\PaulM\PycharmProjects\pythonProject\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2020.3.3\plugins\python\helpers\pydev\pydevconsole.py" --mode=client --port=60546
 import sys; print('Python %s on %s' % (sys.version, sys.platform))
 sys.path.extend(['C:\\Users\\PaulM\\PycharmProjects\\pythonProject', 'C:\\Users\\PaulM\\Spark\\spark-3.0.1-bin-hadoop2.7\\jars', 'C:\\Users\\PaulM\\Spark\\spark-3.0.1-bin-hadoop2.7\\python', 'C:/Users/PaulM/PycharmProjects/pythonProject'])
 PyDev console: starting.
@@ -9,7 +9,7 @@ WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/C:
 WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-21/03/15 18:52:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/03/15 19:45:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 Welcome to
       ____              __
      / __/__  ___ _____/ /__
@@ -18,11 +18,11 @@ Welcome to
       /_/
 Using Python version 3.8.7 (tags/v3.8.7:6503f05, Dec 21 2020 17:59:51)
 SparkSession available as 'spark'.
-pySpark Session context: [('spark.driver.host', 'host.docker.internal'), ('spark.app.id', 'local-1615834379896'), ('spark.sql.catalogImplementation', 'hive'), ('spark.driver.port', '50763'), ('spark.rdd.compress', 'True'), ('spark.serializer.objectStreamReset', '100'), ('spark.master', 'local[*]'), ('spark.submit.pyFiles', ''), ('spark.executor.id', 'driver'), ('spark.submit.deployMode', 'client'), ('spark.ui.showConsoleProgress', 'true'), ('spark.app.name', 'pyspark-shell')]
+pySpark Session context: [('spark.driver.host', 'host.docker.internal'), ('spark.sql.catalogImplementation', 'hive'), ('spark.rdd.compress', 'True'), ('spark.app.id', 'local-1615837522955'), ('spark.serializer.objectStreamReset', '100'), ('spark.master', 'local[*]'), ('spark.submit.pyFiles', ''), ('spark.executor.id', 'driver'), ('spark.submit.deployMode', 'client'), ('spark.ui.showConsoleProgress', 'true'), ('spark.app.name', 'pyspark-shell'), ('spark.driver.port', '60600')]
 <Section: postgres>
-{'user': 'postgres', 'password': 'thirty5ivers', 'driver': 'org.postgresql.Driver'}
+{'user': 'postgres', 'password': '1234', 'driver': 'org.postgresql.Driver'}
 fx_rates.csv
-<csv.DictReader object at 0x0000029D50B985B0>
+<csv.DictReader object at 0x00000146786C76A0>
 ETL fx_rates.csv present
 type userData:<class 'list'>
 possible json table structure using key_list:['fininstrmgnlattrbts_id', 'industry_nm', 'type', 'fininstrm_type', 'fininstrmgnlattrbts_fullnm', 'fininstrmgnlattrbts_shrtnm', 'fininstrmgnlattrbts_clssfctntp', 'fininstrmgnlattrbts_ntnlccy', 'fininstrmgnlattrbts_cmmdtyderivind', 'issr', 'tradgvnrltdattrbts_id', 'tradgvnrltdattrbts_issrreq', 'tradgvnrltdattrbts_frsttraddt', 'tradgvnrltdattrbts_termntndt', 'techattrbts_rlvntcmptntauthrty', 'undlyng_type', 'undlyng_subtype', 'undlyng_isins']
@@ -61,7 +61,7 @@ newDictInstr:{'instrm_id': 'EZ5P39NPFFH6', 'industry_nm': 'NONE', 'type': 'NewRc
 newDictInstr:{'instrm_id': 'DE000DGE0D46', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'DEBT', 'instrm_fullnm': 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'instrm_shrtnm': 'DZ BANK AG/VAR ANL 20230123 BASKET', 'instrm_clssfctntp': 'DSMVVB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '529900HNOAA1KXQJUQ27', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2016, 8, 22, 9, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2023, 1, 18, 18, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'DE', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0009895292,GB00BH4HKS39'}
 ETL closing_prices.xml present
 CONTINUE to spark session
-pySpark Session bespoke context: [('spark.driver.host', 'host.docker.internal'), ('spark.sql.shuffle.partitions', '600'), ('spark.sql.catalogImplementation', 'hive'), ('spark.driver.port', '50763'), ('spark.rdd.compress', 'True'), ('spark.serializer.objectStreamReset', '100'), ('spark.master', 'local[*]'), ('spark.submit.pyFiles', ''), ('spark.executor.id', 'driver'), ('spark.submit.deployMode', 'client'), ('spark.app.id', 'local-1615834382897'), ('spark.app.name', 'MOBI_ETL'), ('spark.ui.showConsoleProgress', 'true')]
+pySpark Session bespoke context: [('spark.driver.host', 'host.docker.internal'), ('spark.sql.shuffle.partitions', '600'), ('spark.sql.catalogImplementation', 'hive'), ('spark.rdd.compress', 'True'), ('spark.app.id', 'local-1615837525937'), ('spark.serializer.objectStreamReset', '100'), ('spark.master', 'local[*]'), ('spark.submit.pyFiles', ''), ('spark.executor.id', 'driver'), ('spark.submit.deployMode', 'client'), ('spark.app.name', 'MOBI_ETL'), ('spark.ui.showConsoleProgress', 'true'), ('spark.driver.port', '60600')]
                                                                                 +------------+-----------+-------+-----------+--------------------+--------------------+-----------------+--------------+---------------------+--------------------+-------+------------+-------------------+-------------------+-----------------------+------------+---------------+-------------+
 |   instrm_id|industry_nm|   type|instrm_type|       instrm_fullnm|       instrm_shrtnm|instrm_clssfctntp|instrm_ntnlccy|instrm_cmmdtyderivind|                issr|trad_id|trad_issrreq|    trad_frsttraddt|     trad_termntndt|tech_rlvntcmptntauthrty|undlyng_type|undlyng_subtype|undlyng_isins|
 +------------+-----------+-------+-----------+--------------------+--------------------+-----------------+--------------+---------------------+--------------------+-------+------------+-------------------+-------------------+-----------------------+------------+---------------+-------------+
@@ -93,7 +93,6 @@ root
  |-- from_ccy: string (nullable = false)
  |-- to_ccy: string (nullable = false)
  |-- fx_rate: decimal(10,3) (nullable = false)
-21/03/15 18:53:13 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
                                                                                 +----------+--------+------+--------+
 |   fx_date|from_ccy|to_ccy| fx_rate|
 +----------+--------+------+--------+
@@ -119,6 +118,7 @@ root
 |2020-12-15|     JMD|   GBP| 190.731|
 +----------+--------+------+--------+
 only showing top 20 rows
+21/03/15 19:45:37 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
                                                                                 +----------+-----+
 |       day|count|
 +----------+-----+
@@ -178,26 +178,26 @@ only showing top 20 rows
                                                                                 +-------------------+--------+------+---------+
 |            fx_date|from_ccy|to_ccy|  fx_rate|
 +-------------------+--------+------+---------+
-|2020-12-31 00:00:00|     PGK|   GBP|    4.793|
-|2020-12-01 00:00:00|     CVE|   GBP|  123.650|
-|2020-12-02 00:00:00|     MVR|   GBP|   20.953|
-|2020-12-03 00:00:00|     MVR|   GBP|   21.085|
-|2020-12-04 00:00:00|     SHP|   GBP|    1.000|
-|2020-12-07 00:00:00|     COP|   GBP| 4660.900|
-|2020-12-07 00:00:00|     SOS|   GBP|  778.600|
-|2020-12-08 00:00:00|     JOD|   GBP|    0.948|
-|2020-12-09 00:00:00|     BHD|   GBP|    0.503|
-|2020-12-09 00:00:00|     CRC|   GBP|  806.850|
-|2020-12-10 00:00:00|     ETB|   GBP|   51.001|
-|2020-12-10 00:00:00|     HNL|   GBP|   32.156|
-|2020-12-11 00:00:00|     IRR|   GBP|55585.600|
-|2020-12-11 00:00:00|     UAH|   GBP|   37.280|
-|2020-12-14 00:00:00|     GYD|   GBP|  279.450|
-|2020-12-15 00:00:00|     PGK|   GBP|    4.714|
-|2020-12-16 00:00:00|     JPY|   GBP|  139.719|
-|2020-12-17 00:00:00|     BDT|   GBP|  115.146|
-|2020-12-17 00:00:00|     CDF|   GBP| 2675.970|
-|2020-12-18 00:00:00|     BAM|   GBP|    2.158|
+|2020-12-08 00:00:00|     SCR|   GBP|   28.496|
+|2020-12-09 00:00:00|     LBP|   GBP| 2022.620|
+|2020-12-09 00:00:00|     MYR|   GBP|    5.426|
+|2020-12-10 00:00:00|     VND|   GBP|30834.280|
+|2020-12-10 00:00:00|     XOF|   GBP|  718.680|
+|2020-12-11 00:00:00|     OMR|   GBP|    0.509|
+|2020-12-14 00:00:00|     TMT|   GBP|    4.665|
+|2020-12-15 00:00:00|     NPR|   GBP|  158.000|
+|2020-12-16 00:00:00|     LSL|   GBP|   20.092|
+|2020-12-17 00:00:00|     MKD|   GBP|   68.398|
+|2020-12-17 00:00:00|     ZAR|   GBP|   19.875|
+|2020-12-18 00:00:00|     DOP|   GBP|   78.674|
+|2020-12-18 00:00:00|     WST|   GBP|    3.456|
+|2020-12-21 00:00:00|     BTN|   GBP|   99.017|
+|2020-12-21 00:00:00|     ISK|   GBP|  172.510|
+|2020-12-22 00:00:00|     SAR|   GBP|    5.022|
+|2020-12-22 00:00:00|     SCR|   GBP|   28.649|
+|2020-12-23 00:00:00|     KYD|   GBP|    1.108|
+|2020-12-23 00:00:00|     PEN|   GBP|    4.876|
+|2020-12-01 00:00:00|     BDT|   GBP|  113.995|
 +-------------------+--------+------+---------+
 only showing top 20 rows
 jdbcDF schema
@@ -341,7 +341,7 @@ Completed Analysis
 stop context
 ETL completed
 stop context
-0:02:09.272489
+0:01:51.136215
 Application completed
 <Section: postgres>
 {'user': 'postgres', 'password': 'thirty5ivers', 'driver': 'org.postgresql.Driver', 'Database': 'MOBI', 'host': 'localhost', 'port': '5432'}
@@ -349,128 +349,128 @@ Start warehouse BUILD
 select *, unnest(string_to_array(undlyng_isins, E',')) as basket from integration.staged_instrument                   where length(undlyng_isins) > 12 LIMIT 2000
 count 1
 <class 'tuple'>
-('AT0000A1KKN9', 'NONE', 'NewRcrd', 'DEBT', 'RBIAV  4/16/24 (FRN)', 'RCB/VAR GAR CTF 20240416', 'DSDVVB', 'EUR', 'false', '529900M2F7D5795H1A49', 'MAEL', 'false', datetime.datetime(2018, 1, 3, 0, 0), datetime.datetime(2018, 10, 12, 1, 0), 'AT', 'Bskt', 'ISIN', 'GB0007980591,GB00B03MLX29', 'GB0007980591')
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'ES0177542018')
 count 2
 <class 'tuple'>
-('AT0000A1KKN9', 'NONE', 'NewRcrd', 'DEBT', 'RBIAV  4/16/24 (FRN)', 'RCB/VAR GAR CTF 20240416', 'DSDVVB', 'EUR', 'false', '529900M2F7D5795H1A49', 'MAEL', 'false', datetime.datetime(2018, 1, 3, 0, 0), datetime.datetime(2018, 10, 12, 1, 0), 'AT', 'Bskt', 'ISIN', 'GB0007980591,GB00B03MLX29', 'GB00B03MLX29')
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB0007980591')
 count 3
 <class 'tuple'>
-('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'ES0177542018')
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00B019KW72')
 count 4
 <class 'tuple'>
-('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB0007980591')
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00B1XZS820')
 count 5
 <class 'tuple'>
-('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00B019KW72')
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00BDR05C01')
 count 6
 <class 'tuple'>
-('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00B1XZS820')
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00BH4HKS39')
 count 7
 <class 'tuple'>
-('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00BDR05C01')
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'JE00B4T3BW64')
 count 8
 <class 'tuple'>
-('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00BH4HKS39')
+('AT0000A1KKN9', 'NONE', 'NewRcrd', 'DEBT', 'RBIAV  4/16/24 (FRN)', 'RCB/VAR GAR CTF 20240416', 'DSDVVB', 'EUR', 'false', '529900M2F7D5795H1A49', 'MAEL', 'false', datetime.datetime(2018, 1, 3, 0, 0), datetime.datetime(2018, 10, 12, 1, 0), 'AT', 'Bskt', 'ISIN', 'GB0007980591,GB00B03MLX29', 'GB0007980591')
 count 9
 <class 'tuple'>
-('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'JE00B4T3BW64')
+('AT0000A1KKN9', 'NONE', 'NewRcrd', 'DEBT', 'RBIAV  4/16/24 (FRN)', 'RCB/VAR GAR CTF 20240416', 'DSDVVB', 'EUR', 'false', '529900M2F7D5795H1A49', 'MAEL', 'false', datetime.datetime(2018, 1, 3, 0, 0), datetime.datetime(2018, 10, 12, 1, 0), 'AT', 'Bskt', 'ISIN', 'GB0007980591,GB00B03MLX29', 'GB00B03MLX29')
 count 10
 <class 'tuple'>
-('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0000536739')
+('DE000DGE0D46', 'NONE', 'NewRcrd', 'DEBT', 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'DZ BANK AG/VAR ANL 20230123 BASKET', 'DSMVVB', 'EUR', 'false', '529900HNOAA1KXQJUQ27', 'STUB', 'true', datetime.datetime(2016, 8, 22, 10, 0), datetime.datetime(2023, 1, 18, 18, 0), 'DE', 'Bskt', 'ISIN', 'GB0009895292,GB00BH4HKS39', 'GB0009895292')
 count 11
 <class 'tuple'>
-('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0005603997')
+('DE000DGE0D46', 'NONE', 'NewRcrd', 'DEBT', 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'DZ BANK AG/VAR ANL 20230123 BASKET', 'DSMVVB', 'EUR', 'false', '529900HNOAA1KXQJUQ27', 'STUB', 'true', datetime.datetime(2016, 8, 22, 10, 0), datetime.datetime(2023, 1, 18, 18, 0), 'DE', 'Bskt', 'ISIN', 'GB0009895292,GB00BH4HKS39', 'GB00BH4HKS39')
 count 12
 <class 'tuple'>
-('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0008706128')
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE0001827041')
 count 13
 <class 'tuple'>
-('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00B0SWJX34')
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE00B1RR8406')
 count 14
 <class 'tuple'>
-('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00BKKMKR23')
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE00BWT6H894')
 count 15
 <class 'tuple'>
-('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00BYW0PQ60')
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'LU1072616219')
 count 16
 <class 'tuple'>
-('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'JE00B4T3BW64')
+('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'GB0007188757')
 count 17
 <class 'tuple'>
-('DE000DGE0D46', 'NONE', 'NewRcrd', 'DEBT', 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'DZ BANK AG/VAR ANL 20230123 BASKET', 'DSMVVB', 'EUR', 'false', '529900HNOAA1KXQJUQ27', 'STUB', 'true', datetime.datetime(2016, 8, 22, 10, 0), datetime.datetime(2023, 1, 18, 18, 0), 'DE', 'Bskt', 'ISIN', 'GB0009895292,GB00BH4HKS39', 'GB0009895292')
+('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'GB00B1XZS820')
 count 18
 <class 'tuple'>
-('DE000DGE0D46', 'NONE', 'NewRcrd', 'DEBT', 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'DZ BANK AG/VAR ANL 20230123 BASKET', 'DSMVVB', 'EUR', 'false', '529900HNOAA1KXQJUQ27', 'STUB', 'true', datetime.datetime(2016, 8, 22, 10, 0), datetime.datetime(2023, 1, 18, 18, 0), 'DE', 'Bskt', 'ISIN', 'GB0009895292,GB00BH4HKS39', 'GB00BH4HKS39')
+('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'JE00B4T3BW64')
 count 19
 <class 'tuple'>
-('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'GB0007188757')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0000811801')
 count 20
 <class 'tuple'>
-('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'GB00BH0P3Z91')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0002374006')
 count 21
 <class 'tuple'>
-('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'JE00B4T3BW64')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0002875804')
 count 22
 <class 'tuple'>
-('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'ES0177542018')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0007099541')
 count 23
 <class 'tuple'>
-('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'GB00B1KJJ408')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0009252882')
 count 24
 <class 'tuple'>
-('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'GB00BHJYC057')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B02L3W35')
 count 25
 <class 'tuple'>
-('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE0001827041')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B03MM408')
 count 26
 <class 'tuple'>
-('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE00B1RR8406')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B0SWJX34')
 count 27
 <class 'tuple'>
-('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE00BWT6H894')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00BKKMKR23')
 count 28
 <class 'tuple'>
-('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'LU1072616219')
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'JE00B4T3BW64')
 count 29
 <class 'tuple'>
-('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'GB0007188757')
+('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'GB0007188757')
 count 30
 <class 'tuple'>
-('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'GB00B1XZS820')
+('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'GB00BH0P3Z91')
 count 31
 <class 'tuple'>
-('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'JE00B4T3BW64')
+('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'JE00B4T3BW64')
 count 32
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0000811801')
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0000536739')
 count 33
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0002374006')
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0005603997')
 count 34
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0002875804')
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0008706128')
 count 35
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0007099541')
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00B0SWJX34')
 count 36
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0009252882')
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00BKKMKR23')
 count 37
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B02L3W35')
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00BYW0PQ60')
 count 38
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B03MM408')
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'JE00B4T3BW64')
 count 39
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B0SWJX34')
+('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'ES0177542018')
 count 40
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00BKKMKR23')
+('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'GB00B1KJJ408')
 count 41
 <class 'tuple'>
-('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'JE00B4T3BW64')
+('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'GB00BHJYC057')
 b'\n                 update foo\n                    set\n                        a = coalesce(10, a), -- a is not nullable\n                        b = (array[b, 20])[1 + 1] -- b is nullable\n                    where id = 1\n                '
 Warehouse build completed
-0:00:00.066974
+0:00:00.108709
 Application completed
