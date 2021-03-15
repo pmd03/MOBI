@@ -1,0 +1,476 @@
+C:\Users\PaulM\PycharmProjects\pythonProject\venv\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm 2020.3.3\plugins\python\helpers\pydev\pydevconsole.py" --mode=client --port=50699
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['C:\\Users\\PaulM\\PycharmProjects\\pythonProject', 'C:\\Users\\PaulM\\Spark\\spark-3.0.1-bin-hadoop2.7\\jars', 'C:\\Users\\PaulM\\Spark\\spark-3.0.1-bin-hadoop2.7\\python', 'C:/Users/PaulM/PycharmProjects/pythonProject'])
+PyDev console: starting.
+Python 3.8.7 (tags/v3.8.7:6503f05, Dec 21 2020, 17:59:51) [MSC v.1928 64 bit (AMD64)] on win32
+runfile('C:/Users/PaulM/PycharmProjects/pythonProjectFCA/FCA_MOBI_final.py', wdir='C:/Users/PaulM/PycharmProjects/pythonProjectFCA')
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/C:/Users/PaulM/Spark/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+21/03/15 18:52:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 3.0.1
+      /_/
+Using Python version 3.8.7 (tags/v3.8.7:6503f05, Dec 21 2020 17:59:51)
+SparkSession available as 'spark'.
+pySpark Session context: [('spark.driver.host', 'host.docker.internal'), ('spark.app.id', 'local-1615834379896'), ('spark.sql.catalogImplementation', 'hive'), ('spark.driver.port', '50763'), ('spark.rdd.compress', 'True'), ('spark.serializer.objectStreamReset', '100'), ('spark.master', 'local[*]'), ('spark.submit.pyFiles', ''), ('spark.executor.id', 'driver'), ('spark.submit.deployMode', 'client'), ('spark.ui.showConsoleProgress', 'true'), ('spark.app.name', 'pyspark-shell')]
+<Section: postgres>
+{'user': 'postgres', 'password': 'thirty5ivers', 'driver': 'org.postgresql.Driver'}
+fx_rates.csv
+<csv.DictReader object at 0x0000029D50B985B0>
+ETL fx_rates.csv present
+type userData:<class 'list'>
+possible json table structure using key_list:['fininstrmgnlattrbts_id', 'industry_nm', 'type', 'fininstrm_type', 'fininstrmgnlattrbts_fullnm', 'fininstrmgnlattrbts_shrtnm', 'fininstrmgnlattrbts_clssfctntp', 'fininstrmgnlattrbts_ntnlccy', 'fininstrmgnlattrbts_cmmdtyderivind', 'issr', 'tradgvnrltdattrbts_id', 'tradgvnrltdattrbts_issrreq', 'tradgvnrltdattrbts_frsttraddt', 'tradgvnrltdattrbts_termntndt', 'techattrbts_rlvntcmptntauthrty', 'undlyng_type', 'undlyng_subtype', 'undlyng_isins']
+newDictInstr:{'instrm_id': 'DE000PP0WGF3', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'BP Put', 'instrm_shrtnm': 'BNP PAR.EHG PUT18 BPE5', 'instrm_clssfctntp': 'RWSNPA', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '549300TS3U4JKMR1B479', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2017, 10, 13, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 9, 17, 21, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007980591'}
+newDictInstr:{'instrm_id': 'DE000CZ44RX2', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'DEBT', 'instrm_fullnm': 'Autocall Certificates on Pharma Stocks', 'instrm_shrtnm': 'Commerzbank AG/VAR NTS 20211231', 'instrm_clssfctntp': 'DEEVRB', 'instrm_ntnlccy': 'NOK', 'instrm_cmmdtyderivind': False, 'issr': '529900W18LQJJN6SJ336', 'trad_id': 'XNGM', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2017, 2, 6, 0, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2021, 12, 16, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'DE', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0009895292'}
+newDictInstr:{'instrm_id': 'CH0420776905', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'DEBT', 'instrm_fullnm': 'UBS AG/LONDON UBS 20200720 10.000000%', 'instrm_shrtnm': 'UBS/ ExCert 20200713 BSKT KNREBD', 'instrm_clssfctntp': 'DEEFRB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '549300SZJ9VS8SGXAN81', 'trad_id': 'UBSY', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2018, 6, 25, 15, 19, 48, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2020, 7, 20, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64'}
+newDictInstr:{'instrm_id': 'EZY307L0V113', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OPTN', 'instrm_fullnm': 'Equity Option Basket Multiple ISINs GBP 20211221', 'instrm_shrtnm': 'NA/O Bskt Put Epn GBP 20211221', 'instrm_clssfctntp': 'HEBDBC', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': 'GGDZP1UYGU9STUHRDP48', 'trad_id': 'MLSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 12, 21, 14, 57, 50, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2021, 12, 21, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007980591'}
+newDictInstr:{'instrm_id': 'EZ3XXPV7X436', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20220224', 'instrm_shrtnm': 'NA/Swaps Bskt Tot Rtn EUR 20220224', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': 'W22LROWP2IHZNBB6K528', 'trad_id': 'GSSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 6, 18, 15, 0, 25, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2022, 2, 24, 23, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'NL0012015705'}
+newDictInstr:{'instrm_id': 'DE000VA9RQ94', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Vontobel Financial Products   TurboC 15.03.19 Glencore 3', 'instrm_shrtnm': 'VONT.FINL PR TURBOC19 8GC', 'instrm_clssfctntp': 'RWSNCE', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '5299009N4N61DPCDHR97', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 11, 14, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 11, 14, 21, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'JE00B4T3BW64'}
+newDictInstr:{'instrm_id': 'EZ5GRG4VQ9S8', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'instrm_shrtnm': 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': 'W22LROWP2IHZNBB6K528', 'trad_id': 'GSSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 2, 26, 14, 55, 40, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2030, 2, 25, 23, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'ES0177542018,GB00B1KJJ408,GB00BHJYC057'}
+newDictInstr:{'instrm_id': 'EZCSJRM8VZJ3', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OPTN', 'instrm_fullnm': 'Equity Option Non_Standard Multiple ISINs GBP 20211116', 'instrm_shrtnm': 'NA/O Bskt Put Epn GBP 20211116', 'instrm_clssfctntp': 'HEBDMC', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': 'GGDZP1UYGU9STUHRDP48', 'trad_id': 'MLSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 11, 16, 13, 53, 27, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2021, 11, 16, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0009895292'}
+newDictInstr:{'instrm_id': 'DE000ST118W2', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'SociÃ©tÃ© GÃ©nÃ©rale Effekten GmbHTuUnlL O.End BP', 'instrm_shrtnm': 'SG EFF. TUUNLL BPE5', 'instrm_clssfctntp': 'RFSTCB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '529900W18LQJJN6SJ336', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 5, 16, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 10, 23, 21, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007980591'}
+newDictInstr:{'instrm_id': 'EZY16VPD6R34', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OSWP', 'instrm_fullnm': 'Equity Swap Non_Standard Multiple ISINs USD 20190826', 'instrm_shrtnm': 'NA/Swaps Nstd Bskt USD 20190826', 'instrm_clssfctntp': 'SEBMXP', 'instrm_ntnlccy': 'USD', 'instrm_cmmdtyderivind': False, 'issr': 'BFM8T61CT2L1QCEMIK50', 'trad_id': 'UBSY', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2019, 2, 14, 8, 11, 19, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2019, 8, 26, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0005405286'}
+newDictInstr:{'instrm_id': 'DE000VA6GWM5', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Vontobel Financial Products   Call 15.03.19 Barclays 1,75', 'instrm_shrtnm': 'VONT.FINL PR CALL19 BCY', 'instrm_clssfctntp': 'RWSNCA', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '5299009N4N61DPCDHR97', 'trad_id': 'FRAB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 9, 4, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 9, 4, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'DE', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0031348658'}
+newDictInstr:{'instrm_id': 'DE000VA5N1Y8', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Vontobel Financial Products   TurboP 21.12.18 RioTinto 40', 'instrm_shrtnm': 'VONT.FINL PR TURBOP18RIO1', 'instrm_clssfctntp': 'RWSNPE', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '5299009N4N61DPCDHR97', 'trad_id': 'FRAB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 8, 9, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 8, 31, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007188757'}
+newDictInstr:{'instrm_id': 'DE000UX8ESV9', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'UBS AG (London Branch)        TurboC O.End RoyalD.', 'instrm_shrtnm': 'UBS LDN TURBOC R6C', 'instrm_clssfctntp': 'RFSTCB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': 'BFM8T61CT2L1QCEMIK50', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 11, 7, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 11, 7, 21, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'NL', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB00B03MLX29'}
+newDictInstr:{'instrm_id': 'EZ8ZR0524FC7', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'instrm_shrtnm': 'NA/Swaps Nstd Bskt GBP 20230620', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': 'DGQCSV2PHVF7I2743539', 'trad_id': 'NOSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2018, 6, 21, 11, 23, 20, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2023, 6, 20, 23, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64'}
+newDictInstr:{'instrm_id': 'EZ6Q9XSWZPH4', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20200619', 'instrm_shrtnm': 'NA/Swaps Bskt Tot Rtn GBP 20200619', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': '549300HFHGOLW672FG74', 'trad_id': 'SUNO', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2019, 8, 21, 19, 33, 12, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2020, 6, 19, 0, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0004082847'}
+newDictInstr:{'instrm_id': 'EZSMXR7K2514', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Non_Standard Multiple ISINs HKD 20240218', 'instrm_shrtnm': 'NA/Swaps Nstd Bskt HKD 20240218', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'HKD', 'instrm_cmmdtyderivind': False, 'issr': 'DGQCSV2PHVF7I2743539', 'trad_id': 'NOSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2019, 2, 19, 13, 27, 22, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2024, 2, 18, 23, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0005405286'}
+newDictInstr:{'instrm_id': 'EZ8Y49XSD270', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OSWP', 'instrm_fullnm': 'NA/Swaps Bskt Pr USD 20180213', 'instrm_shrtnm': 'NA/Swaps Bskt Pr USD 20180213', 'instrm_clssfctntp': 'SEBPXC', 'instrm_ntnlccy': 'USD', 'instrm_cmmdtyderivind': False, 'issr': 'MP6I5ZYZBEU3UXPYFY54', 'trad_id': 'HSBC', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2018, 1, 12, 16, 34, 30, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 2, 13, 0, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64'}
+newDictInstr:{'instrm_id': 'EZMY43JMGZK4', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OSWP', 'instrm_fullnm': 'Equity Swap Non_Standard Multiple ISINs USD 20231020', 'instrm_shrtnm': 'NA/Swaps Nstd Bskt USD 20231020', 'instrm_clssfctntp': 'SEBMXC', 'instrm_ntnlccy': 'USD', 'instrm_cmmdtyderivind': False, 'issr': 'BFM8T61CT2L1QCEMIK50', 'trad_id': 'UBSY', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 10, 20, 9, 39, 13, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2023, 10, 20, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB00B03MLX29'}
+newDictInstr:{'instrm_id': 'EZ5WLJT0P7B3', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20210111', 'instrm_shrtnm': 'NA/Swaps Bskt Tot Rtn GBP 20210111', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': '549300HFHGOLW672FG74', 'trad_id': 'SUNO', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 5, 18, 12, 42, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2021, 1, 11, 0, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0000536739'}
+newDictInstr:{'instrm_id': 'DE000CD79Z59', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Commerzbank AG                TuBull O.End RioTinto 16,79', 'instrm_shrtnm': 'COMMERZBANK TUBULL RIO1', 'instrm_clssfctntp': 'RFSTCB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '851WYGNLUQLFZBSYGB56', 'trad_id': 'FRAB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2016, 6, 10, 9, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 11, 5, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007188757'}
+newDictInstr:{'instrm_id': 'DE000CJ124W0', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Commerzbank AGTurboOS Royal Dutch Shell 31.12.2049 RDSA NA BT 28.42 Bull', 'instrm_shrtnm': 'COMMERZBANK TUBULL R6C', 'instrm_clssfctntp': 'RFSTCB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '851WYGNLUQLFZBSYGB56', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 9, 21, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 10, 11, 21, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'NL', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB00B03MLX29'}
+newDictInstr:{'instrm_id': 'DE000UX5B278', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Open End Turbo Call Optionsschein auf Royal Dutch Shell', 'instrm_shrtnm': 'UBS LDN TURBOC R6C', 'instrm_clssfctntp': 'RFSTCB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': 'BFM8T61CT2L1QCEMIK50', 'trad_id': 'FRAB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 8, 9, 0, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 8, 9, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'NL', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB00B03MLX29'}
+newDictInstr:{'instrm_id': 'EZ2DJ6NDNW41', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'instrm_shrtnm': 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': 'W22LROWP2IHZNBB6K528', 'trad_id': 'GSSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 8, 24, 13, 16, 17, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2021, 4, 22, 23, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219'}
+newDictInstr:{'instrm_id': 'EZM29RMLMM34', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OPTN', 'instrm_fullnm': 'Equity Option Non_Standard Multiple ISINs GBP 20220110', 'instrm_shrtnm': 'NA/O Bskt Put Epn GBP 20220110', 'instrm_clssfctntp': 'HEBDMC', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': 'GGDZP1UYGU9STUHRDP48', 'trad_id': 'MLSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2021, 1, 8, 11, 15, 12, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2022, 1, 10, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB00BH4HKS39'}
+newDictInstr:{'instrm_id': 'CWN8141H7042', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'SGAAccept 13 01 2020 Bkt of Shares', 'instrm_shrtnm': 'SGAAccept      /SGAAccept 13/01/202', 'instrm_clssfctntp': 'RWXXXX', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': '5493007L4T6MD6B57L78', 'trad_id': 'EMTF', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2014, 1, 8, 15, 44, 49, 693000, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2019, 3, 7, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'LU', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007188757,GB00B1XZS820,JE00B4T3BW64'}
+newDictInstr:{'instrm_id': 'EZ4R0Z3VRH65', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'instrm_shrtnm': 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'instrm_clssfctntp': 'SEBTXE', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': 'W22LROWP2IHZNBB6K528', 'trad_id': 'GSSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 11, 13, 12, 22, 19, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2020, 11, 13, 23, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64'}
+newDictInstr:{'instrm_id': 'EZB0T0H43YT3', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OSWP', 'instrm_fullnm': 'Equity Swap Non_Standard Multiple ISINs HKD 20201013', 'instrm_shrtnm': 'NA/Swaps Nstd Bskt HKD 20201013', 'instrm_clssfctntp': 'SEBMXP', 'instrm_ntnlccy': 'HKD', 'instrm_cmmdtyderivind': False, 'issr': 'BFM8T61CT2L1QCEMIK50', 'trad_id': 'UBSY', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 2, 5, 8, 10, 51, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2020, 10, 13, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0005405286'}
+newDictInstr:{'instrm_id': 'EZ6DVW786Q27', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'OPTN', 'instrm_fullnm': 'Equity Option Non_Standard Multiple ISINs USD 20220505', 'instrm_shrtnm': 'NA/O Bskt Put Epn USD 20220505', 'instrm_clssfctntp': 'HEBDMC', 'instrm_ntnlccy': 'USD', 'instrm_cmmdtyderivind': False, 'issr': 'GGDZP1UYGU9STUHRDP48', 'trad_id': 'MLSI', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 11, 5, 15, 45, 17, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2022, 5, 5, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB00B03MLX29'}
+newDictInstr:{'instrm_id': 'DE000ST41RC1', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Open End Turbo Short-Optionsschein mit Stopp-Loss-Level auf BP', 'instrm_shrtnm': 'SG EFF. TURBOS BPE5', 'instrm_clssfctntp': 'RFSTPB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '529900W18LQJJN6SJ336', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 9, 11, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 9, 25, 21, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007980591'}
+newDictInstr:{'instrm_id': 'AT0000A1KKN9', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'DEBT', 'instrm_fullnm': 'RBIAV  4/16/24 (FRN)', 'instrm_shrtnm': 'RCB/VAR GAR CTF 20240416', 'instrm_clssfctntp': 'DSDVVB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '529900M2F7D5795H1A49', 'trad_id': 'MAEL', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2018, 1, 3, 0, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 10, 12, 0, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'AT', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0007980591,GB00B03MLX29'}
+newDictInstr:{'instrm_id': 'DE000VA6CRM4', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'RGHT', 'instrm_fullnm': 'Vontobel Financial Products   TurboP 21.12.18 Barclays 1,8', 'instrm_shrtnm': 'VONT.FINL PR TURBOP18 BCY', 'instrm_clssfctntp': 'RWSNPE', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '5299009N4N61DPCDHR97', 'trad_id': 'FRAB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2018, 9, 3, 8, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2018, 9, 4, 23, 59, 59, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0031348658'}
+newDictInstr:{'instrm_id': 'EZ5P39NPFFH6', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'TRS', 'instrm_fullnm': 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20210129', 'instrm_shrtnm': 'NA/Swaps Bskt Tot Rtn GBP 20210129', 'instrm_clssfctntp': 'SEBTXC', 'instrm_ntnlccy': 'GBP', 'instrm_cmmdtyderivind': False, 'issr': '549300HFHGOLW672FG74', 'trad_id': 'SUNO', 'trad_issrreq': False, 'trad_frsttraddt': datetime.datetime(2020, 3, 23, 15, 7, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2021, 1, 29, 0, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'GB', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB00B7T77214'}
+newDictInstr:{'instrm_id': 'DE000DGE0D46', 'industry_nm': 'NONE', 'type': 'NewRcrd', 'instrm_type': 'DEBT', 'instrm_fullnm': 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'instrm_shrtnm': 'DZ BANK AG/VAR ANL 20230123 BASKET', 'instrm_clssfctntp': 'DSMVVB', 'instrm_ntnlccy': 'EUR', 'instrm_cmmdtyderivind': False, 'issr': '529900HNOAA1KXQJUQ27', 'trad_id': 'STUB', 'trad_issrreq': True, 'trad_frsttraddt': datetime.datetime(2016, 8, 22, 9, 0, tzinfo=datetime.timezone.utc), 'trad_termntndt': datetime.datetime(2023, 1, 18, 18, 0, tzinfo=datetime.timezone.utc), 'tech_rlvntcmptntauthrty': 'DE', 'undlyng_type': 'Bskt', 'undlyng_subtype': 'ISIN', 'undlyng_isins': 'GB0009895292,GB00BH4HKS39'}
+ETL closing_prices.xml present
+CONTINUE to spark session
+pySpark Session bespoke context: [('spark.driver.host', 'host.docker.internal'), ('spark.sql.shuffle.partitions', '600'), ('spark.sql.catalogImplementation', 'hive'), ('spark.driver.port', '50763'), ('spark.rdd.compress', 'True'), ('spark.serializer.objectStreamReset', '100'), ('spark.master', 'local[*]'), ('spark.submit.pyFiles', ''), ('spark.executor.id', 'driver'), ('spark.submit.deployMode', 'client'), ('spark.app.id', 'local-1615834382897'), ('spark.app.name', 'MOBI_ETL'), ('spark.ui.showConsoleProgress', 'true')]
+                                                                                +------------+-----------+-------+-----------+--------------------+--------------------+-----------------+--------------+---------------------+--------------------+-------+------------+-------------------+-------------------+-----------------------+------------+---------------+-------------+
+|   instrm_id|industry_nm|   type|instrm_type|       instrm_fullnm|       instrm_shrtnm|instrm_clssfctntp|instrm_ntnlccy|instrm_cmmdtyderivind|                issr|trad_id|trad_issrreq|    trad_frsttraddt|     trad_termntndt|tech_rlvntcmptntauthrty|undlyng_type|undlyng_subtype|undlyng_isins|
++------------+-----------+-------+-----------+--------------------+--------------------+-----------------+--------------+---------------------+--------------------+-------+------------+-------------------+-------------------+-----------------------+------------+---------------+-------------+
+|DE000HR0CG46|       NONE|NewRcrd|       RGHT|HVB Put Optionssc...|UC-HVB/POS ROYDUS...|           RWSNPA|           EUR|                false|2ZCNRR8UK83OBTEK2170|   MUND|        true|2020-07-23 15:00:00|2020-08-20 00:59:59|                     NL|        Sngl|           ISIN| GB00B03MLX29|
+|DE000LS2V8G6|       NONE|NewRcrd|       RGHT|Turbo-Zertifikat ...|Lang+Schwarz/CKO ...|           RWSNCE|           EUR|                false|5299000W5UY6SNDKTT52|   STUB|        true|2017-06-28 10:00:00|2017-12-13 21:00:00|                     DE|        Sngl|           ISIN| JE00B4T3BW64|
+|DE000P8FDD92|       NONE|NewRcrd|       OPTN|ROY SI 20160819 P...|EUREX/O 201608 P ...|           OPASPS|           EUR|                false|529900UT4DG0LG5R9O07|   XEUR|       false|2016-05-25 01:00:00|2016-08-20 00:59:59|                     NL|        Sngl|           ISIN| GB00B03MLX29|
+|EZ1S4SNL7KS8|       NONE|NewRcrd|        TRS|Equity Swap Price...|NA/Swaps Tot Rtn ...|           SESTXC|           GBP|                false|BFM8T61CT2L1QCEMIK50|   UBSY|       false|2019-11-13 12:47:09|2020-12-09 23:59:59|                     GB|        Sngl|           ISIN| GB00B24CGK77|
+|EZKNRFS0J4Y9|       NONE|NewRcrd|        TRS|Equity Swap Price...|NA/Swaps Tot Rtn ...|           SESTXC|           GBP|                false|W22LROWP2IHZNBB6K528|   GSSI|       false|2020-01-24 18:08:00|2030-01-24 23:59:00|                     GB|        Sngl|           ISIN| GB00B02L3W35|
+|DE000HZ3W0F6|       NONE|NewRcrd|       EQTY|HVB Reverse Bonus...|UC-HVB/ZERO ZT 20...|           EYCYFS|           EUR|                false|2ZCNRR8UK83OBTEK2170|   FRAB|        true|2020-07-01 07:00:00|2020-07-09 22:59:59|                     NL|        Sngl|           ISIN| GB00B03MLX29|
+|DE000SD9GV17|       NONE|NewRcrd|       RGHT|SociÃ©tÃ© GÃ©nÃ©r...|SG EFFEKTEN/COS A...|           RFSTCB|           EUR|                false|529900W18LQJJN6SJ336|   FRAB|        true|2020-11-30 07:00:00|2020-12-08 22:59:59|                     DE|        Sngl|           ISIN| GB0009895292|
+|EZBVDMYV9M62|       NONE|NewRcrd|        TRS|Equity Swap Portf...|NA/Swaps SStk Tot...|           SESTXC|           GBP|                false|7H6GLXDRUGQFU57RNE97|   JPCB|       false|2020-11-12 19:40:27|2025-11-14 00:00:00|                     GB|        Sngl|           ISIN| GB00B2B0DG97|
+|EZR497Y35QV5|       NONE|NewRcrd|        TRS|Equity Swap Price...|NA/Swaps Tot Rtn ...|           SESTXC|           GBP|                false|BFM8T61CT2L1QCEMIK50|   UBSY|       false|2019-05-21 19:37:27|2020-06-16 00:59:59|                     GB|        Sngl|           ISIN| GB0000536739|
+|EZVLVNDPR4X5|       NONE|NewRcrd|        TRS|NA/Swaps Tot Rtn ...|NA/Swaps Tot Rtn ...|           SESTXC|           GBP|                false|W22LROWP2IHZNBB6K528|   GSSI|       false|2018-02-23 17:39:01|2019-03-25 23:59:00|                     GB|        Sngl|           ISIN| GB0006825383|
+|GB00HYD60516|       NONE|NewRcrd|       OPTN|BRW-Burberry Grou...|ICE/C OPT 2020112...|           OCASPS|           GBP|                false|549300UF4R84F48NCH34|   IFLO|        true|2020-03-10 00:00:00|2020-11-20 23:59:59|                     GB|        Sngl|           ISIN| GB0031743007|
+|GB00J3YF1993|       NONE|NewRcrd|       OPTN|HSB-HSBC Holdings...|ICE/P OPT 2021061...|           OPASPS|           GBP|                false|549300UF4R84F48NCH34|   IFLO|        true|2020-04-01 01:00:00|2021-06-19 00:59:59|                     GB|        Sngl|           ISIN| GB0005405286|
+|GB00J6CGMJ24|       NONE|NewRcrd|       OPTN|BLC-British Land ...|ICE/C OPT 2021031...|           OCASPS|           GBP|                false|549300UF4R84F48NCH34|   IFLO|        true|2020-03-23 00:00:00|2021-03-19 23:59:59|                     GB|        Sngl|           ISIN| GB0001367019|
+|DE000C05QK35|       NONE|NewRcrd|       OPTN|BBL SI 20171020 P...|Eurex/O 20171020 ...|           OCASPS|           GBP|                false|529900UT4DG0LG5R9O07|   XEUR|       false|2017-07-24 01:00:00|2017-10-21 00:59:59|                     GB|        Sngl|           ISIN| GB0031348658|
+|DE000C15YVB3|       NONE|NewRcrd|       OPTN|ROY1 SI 20180406 ...|Eurex/O 20180406 ...|           OPASPS|           EUR|                false|529900UT4DG0LG5R9O07|   XEUR|       false|2018-03-02 00:00:00|2018-04-07 00:59:59|                     NL|        Sngl|           ISIN| GB00B03MLX29|
+|DE000PR3MUK7|       NONE|NewRcrd|       RGHT|BNP Paribas Em.-u...|BNP Paribas Em/PO...|           RWSNPA|           EUR|                false|549300TS3U4JKMR1B479|   FRAB|        true|2017-02-03 09:00:00|2017-12-08 00:00:00|                     NL|        Sngl|           ISIN| GB00B03MLX29|
+|GB00H22LZW59|       NONE|NewRcrd|       OPTN|MDI-Mondi Plc (St...|ICE/C OPT 2018111...|           OCASPS|           GBP|                false|549300UF4R84F48NCH34|   IFLO|        true|2017-12-28 00:00:00|2018-11-16 23:59:59|                     GB|        Sngl|           ISIN| GB00B1CRLC47|
+|GB00J6B1F992|       NONE|NewRcrd|       OPTN|AHA-Anglo America...|ICE/P OPT 2021082...|           OPASPS|           GBP|                false|549300UF4R84F48NCH34|   IFLO|        true|2020-03-19 00:00:00|2021-08-21 00:59:59|                     GB|        Sngl|           ISIN| GB00B1XZS820|
+|NLENX9861370|       NONE|NewRcrd|       OPTN|  AO1RD.2010.01080.C|ENXT NL/O 2020100...|           OCASPS|           EUR|                false|724500V6UOK62XEZ2L78|   XEUE|       false|2020-09-21 01:00:00|2020-10-02 17:30:00|                     NL|        Sngl|           ISIN| GB00B03MLX29|
+|EZYBMS6GMPD9|       NONE|NewRcrd|        TRS|Equity Swap Price...|NA/Swaps Tot Rtn ...|           SESTXC|           GBP|                false|W22LROWP2IHZNBB6K528|   GSSI|       false|2019-09-06 17:04:59|2029-09-07 00:59:00|                     GB|        Sngl|           ISIN| GB00B7T77214|
++------------+-----------+-------+-----------+--------------------+--------------------+-----------------+--------------+---------------------+--------------------+-------+------------+-------------------+-------------------+-----------------------+------------+---------------+-------------+
+only showing top 20 rows
+                                                                                dfRateFX:StructType(List(StructField(fx_date,DateType,false),StructField(from_ccy,StringType,false),StructField(to_ccy,StringType,false),StructField(fx_rate,DecimalType(10,3),false)))
+root
+ |-- fx_date: date (nullable = false)
+ |-- from_ccy: string (nullable = false)
+ |-- to_ccy: string (nullable = false)
+ |-- fx_rate: decimal(10,3) (nullable = false)
+21/03/15 18:53:13 WARN ProcfsMetricsGetter: Exception when trying to compute pagesize, as a result reporting of ProcessTree metrics is stopped
+                                                                                +----------+--------+------+--------+
+|   fx_date|from_ccy|to_ccy| fx_rate|
++----------+--------+------+--------+
+|2020-12-01|     BDT|   GBP| 113.995|
+|2020-12-01|     HKD|   GBP|  10.407|
+|2020-12-02|     CVE|   GBP| 122.320|
+|2020-12-02|     MGA|   GBP|4974.100|
+|2020-12-03|     MDL|   GBP|  23.164|
+|2020-12-03|     PHP|   GBP|  64.667|
+|2020-12-04|     HTG|   GBP|  92.730|
+|2020-12-04|     XCU|   GBP|   0.926|
+|2020-12-07|     ARS|   GBP| 108.842|
+|2020-12-07|     MVR|   GBP|  20.714|
+|2020-12-08|     HNL|   GBP|  32.351|
+|2020-12-08|     MZN|   GBP|  99.153|
+|2020-12-09|     HKD|   GBP|  10.347|
+|2020-12-09|     UYU|   GBP|  57.013|
+|2020-12-10|     ERN|   GBP|  20.159|
+|2020-12-11|     BWP|   GBP|  14.475|
+|2020-12-11|     IQD|   GBP|1574.000|
+|2020-12-14|     BIF|   GBP|2583.110|
+|2020-12-14|     CDF|   GBP|2623.590|
+|2020-12-15|     JMD|   GBP| 190.731|
++----------+--------+------+--------+
+only showing top 20 rows
+                                                                                +----------+-----+
+|       day|count|
++----------+-----+
+|2020-12-15|  153|
+|2020-12-14|  153|
+|2020-12-31|  150|
+|2020-12-18|  152|
+|2020-12-03|  153|
+|2020-12-28|  150|
+|2020-12-22|  153|
+|2020-12-25|  144|
+|2020-12-02|  153|
+|2020-12-07|  153|
+|2020-12-23|  153|
+|2020-12-04|  152|
+|2020-12-30|  152|
+|2020-12-17|  153|
+|2020-12-16|  153|
+|2020-12-01|  153|
+|2020-12-08|  153|
+|2020-12-24|  152|
+|2020-12-09|  153|
+|2020-12-29|  151|
++----------+-----+
+only showing top 20 rows
+                                                                                +-------+--------+-----+
+|  month|from_ccy|count|
++-------+--------+-----+
+|2020-12|     ZMW|   23|
+|2020-12|     ZAR|   23|
+|2020-12|     YER|   23|
+|2020-12|     XPF|   23|
+|2020-12|     XOF|   23|
+|2020-12|     XDR|   18|
+|2020-12|     XCU|   23|
+|2020-12|     XCD|   23|
+|2020-12|     XAF|   23|
+|2020-12|     WST|   23|
+|2020-12|     VUV|   23|
+|2020-12|     VND|   23|
+|2020-12|     UZS|   23|
+|2020-12|     UYU|   23|
+|2020-12|     USD|   23|
+|2020-12|     UGX|   23|
+|2020-12|     UAH|   23|
+|2020-12|     TZS|   23|
+|2020-12|     TWD|   23|
+|2020-12|     TTD|   23|
++-------+--------+-----+
+only showing top 20 rows
+                                                                                3497
+                                                                                +-----+-----------+
+|month|   sum_rate|
++-----+-----------+
+|   12|5222069.541|
++-----+-----------+
+                                                                                +-------------------+--------+------+---------+
+|            fx_date|from_ccy|to_ccy|  fx_rate|
++-------------------+--------+------+---------+
+|2020-12-31 00:00:00|     PGK|   GBP|    4.793|
+|2020-12-01 00:00:00|     CVE|   GBP|  123.650|
+|2020-12-02 00:00:00|     MVR|   GBP|   20.953|
+|2020-12-03 00:00:00|     MVR|   GBP|   21.085|
+|2020-12-04 00:00:00|     SHP|   GBP|    1.000|
+|2020-12-07 00:00:00|     COP|   GBP| 4660.900|
+|2020-12-07 00:00:00|     SOS|   GBP|  778.600|
+|2020-12-08 00:00:00|     JOD|   GBP|    0.948|
+|2020-12-09 00:00:00|     BHD|   GBP|    0.503|
+|2020-12-09 00:00:00|     CRC|   GBP|  806.850|
+|2020-12-10 00:00:00|     ETB|   GBP|   51.001|
+|2020-12-10 00:00:00|     HNL|   GBP|   32.156|
+|2020-12-11 00:00:00|     IRR|   GBP|55585.600|
+|2020-12-11 00:00:00|     UAH|   GBP|   37.280|
+|2020-12-14 00:00:00|     GYD|   GBP|  279.450|
+|2020-12-15 00:00:00|     PGK|   GBP|    4.714|
+|2020-12-16 00:00:00|     JPY|   GBP|  139.719|
+|2020-12-17 00:00:00|     BDT|   GBP|  115.146|
+|2020-12-17 00:00:00|     CDF|   GBP| 2675.970|
+|2020-12-18 00:00:00|     BAM|   GBP|    2.158|
++-------------------+--------+------+---------+
+only showing top 20 rows
+jdbcDF schema
+jdbcDF: <class 'pyspark.sql.dataframe.DataFrame'>
+root
+ |-- fx_date: timestamp (nullable = true)
+ |-- from_ccy: string (nullable = true)
+ |-- to_ccy: string (nullable = true)
+ |-- fx_rate: decimal(10,3) (nullable = true)
+                                                                                instruments.json
+root
+ |-- fininstrmgnlattrbts_id: string (nullable = false)
+ |-- trd_dt: string (nullable = false)
+ |-- ccy: string (nullable = false)
+ |-- eod_price: string (nullable = false)
+ |-- day_high_price: string (nullable = false)
+ |-- day_low_price: string (nullable = false)
+dfClosingPriceValidated strings
+                                                                                dfClosingPriceValidated count:2207
++----------------------+----------+---+---------+--------------+-------------+
+|fininstrmgnlattrbts_id|    trd_dt|ccy|eod_price|day_high_price|day_low_price|
++----------------------+----------+---+---------+--------------+-------------+
+|          GB0002162385|2020-12-24|GBP|   3.2800|        3.3382|       3.2624|
+|          GB0000536739|2020-12-04|GBP|  32.1900|       33.0500|      32.0300|
+|          GB00B0LCW083|2020-12-22|GBP|  25.4500|       25.6600|      25.2700|
+|          GB00B03MM408|2020-12-04|GBP|  13.5140|       13.5846|      13.2275|
+|          GB00B03MM408|2020-12-03|GBP|  13.0940|       13.1661|      12.8480|
+|          GB00BJFFLV09|2020-12-16|GBP|  63.0600|       63.0800|      61.9400|
+|          GB0002374006|2020-12-11|GBP|  30.0850|       30.2850|      29.8150|
+|          GB00BYX91H57|2020-12-22|GBP|   8.1360|        8.1360|       7.8220|
+|          GB00BDD85M81|2020-12-30|GBP|   5.3000|        5.4200|       5.2900|
+|          GB0007669376|2020-12-29|GBP|  11.4450|       11.7200|      11.4200|
+|          GB00BVYVFW23|2020-12-10|GBP|   5.5460|        5.6080|       5.5100|
+|          GB00B1VZ0M25|2020-12-24|GBP|  15.5200|       15.5600|      15.2350|
+|          GB00B1VZ0M25|2020-12-01|GBP|  14.9650|       151.000|      14.2950|
+|          DE000STRA555|2020-12-29|EUR| 121.8000|      121.8000|     121.3942|
+|          IE00BWT6H894|2020-12-21|EUR| 148.5000|      150.2500|     146.4855|
+|          CH0198251305|2020-12-29|EUR|  24.3500|       24.5500|      22.8700|
+|          NL0012015705|2020-12-17|EUR|  78.1000|       78.6800|      77.0400|
+|          GB0031348658|2020-12-31|GBP|   1.4668|        1.4886|       1.4461|
+|          GB0031348658|2020-12-30|GBP|   1.4888|        1.5308|       1.4870|
+|          GB00BHJYC057|2020-12-09|GBP| -47.7100|       48.5400|      47.5000|
+|          US0556221044|2020-12-03|USD|  21.5700|       21.8300|      21.2800|
+|          US0556221044|2020-12-29|USD|  21.0000|       21.4100|      21.0000|
+|          GB0006825383|2020-12-04|GBP|  28.6800|       29.4000|      28.0300|
+|          GB0009252882|2020-12-22|GBP|  13.4980|       13.5100|      13.3040|
+|          GB0009252882|2020-12-11|GBP|  14.1320|       14.2889|      14.0740|
+|          GB0005603997|2020-12-30|GBP|   2.6890|        2.7130|       2.6580|
+|          GB0002875804|2020-12-17|GBP|  27.9500|       28.3500|      27.8150|
+|          GB00B1FH8J72|2020-12-15|GBP|  23.0800|       23.2400|      22.9900|
+|          GB00BGXQNP29|2020-12-11|GBP|   7.0340|        7.1700|       7.0060|
+|          GB00BZ4BQC70|2020-12-24|GBP|  24.7000|       25.2806|      24.6000|
+|          GB00BDR05C01|2020-12-11|GBP|   8.7480|        8.9940|       8.7480|
+|          GB0008220112|2020-12-02|GBP|   3.3940|        3.4900|       3.3860|
+|          GB0008706128|2020-12-10|GBP|   0.3567|        0.3700|       0.3456|
+|          GB0008706128|2020-12-04|GBP|   0.3902|        0.3949|       0.3830|
+|          GB00BMJ6DW54|2020-12-15|GBP|   5.4560|        5.5540|       5.3640|
+|          GB00BMJ6DW54|2020-12-14|GBP|   5.5440|        5.6680|       5.5180|
+|          GB00B10RZP78|2020-12-17|GBP|  43.3000|       44.0800|      43.1300|
+|          GB00B39J2M42|2020-12-30|GBP|   9.0920|        9.2700|       9.0900|
+|          GB0006776081|2020-12-15|GBP|   6.6020|        6.6700|       6.5540|
+|          GB0002634946|2020-12-09|GBP|   5.1540|        5.2260|       5.1100|
+|          GB00B7T77214|2020-12-22|GBP|   1.5890|        1.6080|       1.5290|
+|          GB00BKKMKR23|2020-12-09|GBP|   6.7560|        6.7700|       6.7520|
+|          GB00B2QPKJ12|2020-12-23|GBP|  11.3700|       11.5900|      11.2850|
+|          GB00B3MBS747|2020-12-04|GBP|  22.1300|       22.8000|      22.0800|
+|          GB00BDR05C01|2020-12-22|GBP|   8.5240|        8.5497|       8.4520|
+|          GB0008847096|2020-12-22|GBP|   2.2030|        2.2210|       2.1910|
+|          GB0008847096|2020-12-30|GBP|   2.3530|        2.3726|       2.3130|
+|          GB00BLDYK618|2020-12-24|GBP|  11.8200|       11.9600|      11.7600|
+|          GB00BLDYK618|2020-12-18|GBP|  11.8500|       12.0325|      11.8500|
+|          GB00B71N6K86|2020-12-23|GBP|   4.7340|        4.7590|       4.6410|
++----------------------+----------+---+---------+--------------+-------------+
+only showing top 50 rows
+inner_join:
+df1:2207
+                                                                                inner_join:2207
+root
+ |-- fininstrmgnlattrbts_id: string (nullable = false)
+ |-- trd_dt: date (nullable = true)
+ |-- ccy: string (nullable = false)
+ |-- eod_price: decimal(10,4) (nullable = true)
+ |-- day_high_price: decimal(10,4) (nullable = true)
+ |-- day_low_price: decimal(10,4) (nullable = true)
+ |-- eod_price_converted: decimal(10,4) (nullable = true)
+ |-- day_high_price_converted: decimal(10,4) (nullable = true)
+ |-- day_low_price_converted: decimal(10,4) (nullable = true)
+                                                                                +---+-----+
+|ccy|count|
++---+-----+
+|USD|   71|
+|GBP| 1827|
+|EUR|  309|
++---+-----+
+                                                                                +---+-----+
+|ccy|count|
++---+-----+
+|USD|   71|
+|GBP| 1827|
+|EUR|  309|
++---+-----+
+                                                                                +---+--------------+-------------+---------+------------------------+-----------------------+-------------------+----------------------+----------+
+|ccy|day_high_price|day_low_price|eod_price|day_high_price_converted|day_low_price_converted|eod_price_converted|fininstrmgnlattrbts_id|    trd_dt|
++---+--------------+-------------+---------+------------------------+-----------------------+-------------------+----------------------+----------+
+|EUR|      121.8000|     121.3942| 121.8000|                110.6267|               110.2581|           110.6267|          DE000STRA555|2020-12-29|
+|EUR|       24.5500|      22.8700|  24.3500|                 22.2979|                20.7720|            22.1163|          CH0198251305|2020-12-29|
+|EUR|       90.9800|      88.7600|  90.0400|                 82.6340|                80.6176|            81.7802|          JE00BJVNSS43|2020-12-29|
+|EUR|       17.4850|      16.9700|  17.4850|                 15.8810|                15.4133|            15.8810|          JE00B6T5S470|2020-12-29|
+|EUR|       11.7500|      11.5450|  11.5850|                 10.6721|                10.4859|            10.5223|          IM00B5VQMV65|2020-12-29|
+|EUR|       84.2200|      82.1400|  82.1400|                 76.4941|                74.6049|            74.6049|          NL0012015705|2020-12-29|
+|EUR|        5.2520|       5.1820|   5.2500|                  4.7702|                 4.7066|             4.7684|          LU1072616219|2020-12-29|
+|EUR|        1.7139|       1.6540|   1.6540|                  1.5567|                 1.5023|             1.5023|          ES0177542018|2020-12-29|
+|EUR|       31.8200|      31.3700|  31.4800|                 28.9010|                28.4923|            28.5922|          IE0001827041|2020-12-29|
+|EUR|       34.6000|      33.7500|  33.7500|                 31.4260|                30.6540|            30.6540|          GG00BPFJTF46|2020-12-29|
+|EUR|       35.7004|      34.7400|  35.3800|                 32.4254|                31.5531|            32.1344|          IE00B1RR8406|2020-12-29|
+|EUR|       54.7800|      53.2800|  53.8000|                 49.7548|                48.3924|            48.8647|          IE0002424939|2020-12-29|
+|EUR|      155.1500|     152.3000| 152.7500|                140.9173|               138.3288|           138.7375|          IE00BWT6H894|2020-12-29|
+|EUR|        2.3865|       2.3310|   2.3560|                  2.1676|                 2.1172|             2.1399|          JE00B4T3BW64|2020-12-29|
+|EUR|        8.3700|       8.1780|   8.1840|                  7.6022|                 7.4278|             7.4332|          JE00B8KF9B49|2020-12-29|
+|USD|       21.9400|      21.9050|  21.9050|                 16.2158|                16.1899|            16.1899|          US0556221044|2020-12-18|
+|USD|        6.4900|       6.4900|   6.4900|                  4.7967|                 4.7967|             4.7967|          US37827X1000|2020-12-18|
+|USD|       76.5600|      76.5600|  76.5600|                 56.5854|                56.5854|            56.5854|          US7672041008|2020-12-18|
+|USD|       50.8800|      50.4487|  50.4700|                 37.6053|                37.2865|            37.3023|          US0463531089|2020-12-18|
+|EUR|       25.3000|      24.8500|  24.9000|                 22.8133|                22.4076|            22.4527|          GG00BPFJTF46|2020-12-04|
++---+--------------+-------------+---------+------------------------+-----------------------+-------------------+----------------------+----------+
+only showing top 20 rows
+jdbcDfClosingPrice schema
+jdbcDfClosingPrice: <class 'pyspark.sql.dataframe.DataFrame'>
+root
+ |-- ccy: string (nullable = true)
+ |-- day_high_price: decimal(10,4) (nullable = true)
+ |-- day_low_price: decimal(10,4) (nullable = true)
+ |-- eod_price: decimal(10,4) (nullable = true)
+ |-- day_high_price_converted: decimal(10,4) (nullable = true)
+ |-- day_low_price_converted: decimal(10,4) (nullable = true)
+ |-- eod_price_converted: decimal(10,4) (nullable = true)
+ |-- fininstrmgnlattrbts_id: string (nullable = true)
+ |-- trd_dt: date (nullable = true)
+2207
+Completed Analysis
+stop context
+ETL completed
+stop context
+0:02:09.272489
+Application completed
+<Section: postgres>
+{'user': 'postgres', 'password': 'thirty5ivers', 'driver': 'org.postgresql.Driver', 'Database': 'MOBI', 'host': 'localhost', 'port': '5432'}
+Start warehouse BUILD
+select *, unnest(string_to_array(undlyng_isins, E',')) as basket from integration.staged_instrument                   where length(undlyng_isins) > 12 LIMIT 2000
+count 1
+<class 'tuple'>
+('AT0000A1KKN9', 'NONE', 'NewRcrd', 'DEBT', 'RBIAV  4/16/24 (FRN)', 'RCB/VAR GAR CTF 20240416', 'DSDVVB', 'EUR', 'false', '529900M2F7D5795H1A49', 'MAEL', 'false', datetime.datetime(2018, 1, 3, 0, 0), datetime.datetime(2018, 10, 12, 1, 0), 'AT', 'Bskt', 'ISIN', 'GB0007980591,GB00B03MLX29', 'GB0007980591')
+count 2
+<class 'tuple'>
+('AT0000A1KKN9', 'NONE', 'NewRcrd', 'DEBT', 'RBIAV  4/16/24 (FRN)', 'RCB/VAR GAR CTF 20240416', 'DSDVVB', 'EUR', 'false', '529900M2F7D5795H1A49', 'MAEL', 'false', datetime.datetime(2018, 1, 3, 0, 0), datetime.datetime(2018, 10, 12, 1, 0), 'AT', 'Bskt', 'ISIN', 'GB0007980591,GB00B03MLX29', 'GB00B03MLX29')
+count 3
+<class 'tuple'>
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'ES0177542018')
+count 4
+<class 'tuple'>
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB0007980591')
+count 5
+<class 'tuple'>
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00B019KW72')
+count 6
+<class 'tuple'>
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00B1XZS820')
+count 7
+<class 'tuple'>
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00BDR05C01')
+count 8
+<class 'tuple'>
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'GB00BH4HKS39')
+count 9
+<class 'tuple'>
+('EZ8ZR0524FC7', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Non_Standard Multiple ISINs GBP 20230620', 'NA/Swaps Nstd Bskt GBP 20230620', 'SEBTXC', 'GBP', 'false', 'DGQCSV2PHVF7I2743539', 'NOSI', 'false', datetime.datetime(2018, 6, 21, 12, 23, 20), datetime.datetime(2023, 6, 21, 0, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB0007980591,GB00B019KW72,GB00B1XZS820,GB00BDR05C01,GB00BH4HKS39,JE00B4T3BW64', 'JE00B4T3BW64')
+count 10
+<class 'tuple'>
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0000536739')
+count 11
+<class 'tuple'>
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0005603997')
+count 12
+<class 'tuple'>
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB0008706128')
+count 13
+<class 'tuple'>
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00B0SWJX34')
+count 14
+<class 'tuple'>
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00BKKMKR23')
+count 15
+<class 'tuple'>
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'GB00BYW0PQ60')
+count 16
+<class 'tuple'>
+('EZ8Y49XSD270', 'NONE', 'NewRcrd', 'OSWP', 'NA/Swaps Bskt Pr USD 20180213', 'NA/Swaps Bskt Pr USD 20180213', 'SEBPXC', 'USD', 'false', 'MP6I5ZYZBEU3UXPYFY54', 'HSBC', 'false', datetime.datetime(2018, 1, 12, 16, 34, 30), datetime.datetime(2018, 2, 13, 0, 0), 'GB', 'Bskt', 'ISIN', 'GB0000536739,GB0005603997,GB0008706128,GB00B0SWJX34,GB00BKKMKR23,GB00BYW0PQ60,JE00B4T3BW64', 'JE00B4T3BW64')
+count 17
+<class 'tuple'>
+('DE000DGE0D46', 'NONE', 'NewRcrd', 'DEBT', 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'DZ BANK AG/VAR ANL 20230123 BASKET', 'DSMVVB', 'EUR', 'false', '529900HNOAA1KXQJUQ27', 'STUB', 'true', datetime.datetime(2016, 8, 22, 10, 0), datetime.datetime(2023, 1, 18, 18, 0), 'DE', 'Bskt', 'ISIN', 'GB0009895292,GB00BH4HKS39', 'GB0009895292')
+count 18
+<class 'tuple'>
+('DE000DGE0D46', 'NONE', 'NewRcrd', 'DEBT', 'DZ BANK AG Deut.Zentral-Gen. VZ TEILGAR 90 SL 07-2016 16/23', 'DZ BANK AG/VAR ANL 20230123 BASKET', 'DSMVVB', 'EUR', 'false', '529900HNOAA1KXQJUQ27', 'STUB', 'true', datetime.datetime(2016, 8, 22, 10, 0), datetime.datetime(2023, 1, 18, 18, 0), 'DE', 'Bskt', 'ISIN', 'GB0009895292,GB00BH4HKS39', 'GB00BH4HKS39')
+count 19
+<class 'tuple'>
+('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'GB0007188757')
+count 20
+<class 'tuple'>
+('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'GB00BH0P3Z91')
+count 21
+<class 'tuple'>
+('CH0420776905', 'NONE', 'NewRcrd', 'DEBT', 'UBS AG/LONDON UBS 20200720 10.000000%', 'UBS/ ExCert 20200713 BSKT KNREBD', 'DEEFRB', 'EUR', 'false', '549300SZJ9VS8SGXAN81', 'UBSY', 'false', datetime.datetime(2018, 6, 25, 16, 19, 48), datetime.datetime(2020, 7, 21, 0, 59, 59), 'GB', 'Bskt', 'ISIN', 'GB0007188757,GB00BH0P3Z91,JE00B4T3BW64', 'JE00B4T3BW64')
+count 22
+<class 'tuple'>
+('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'ES0177542018')
+count 23
+<class 'tuple'>
+('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'GB00B1KJJ408')
+count 24
+<class 'tuple'>
+('EZ5GRG4VQ9S8', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20300225', 'NA/Swaps Bskt Tot Rtn EUR 20300225', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 2, 26, 14, 55, 40), datetime.datetime(2030, 2, 25, 23, 59), 'GB', 'Bskt', 'ISIN', 'ES0177542018,GB00B1KJJ408,GB00BHJYC057', 'GB00BHJYC057')
+count 25
+<class 'tuple'>
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE0001827041')
+count 26
+<class 'tuple'>
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE00B1RR8406')
+count 27
+<class 'tuple'>
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'IE00BWT6H894')
+count 28
+<class 'tuple'>
+('EZ2DJ6NDNW41', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs EUR 20210422', 'NA/Swaps Bskt Tot Rtn EUR 20210422', 'SEBTXC', 'EUR', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 8, 24, 14, 16, 17), datetime.datetime(2021, 4, 23, 0, 59), 'GB', 'Bskt', 'ISIN', 'IE0001827041,IE00B1RR8406,IE00BWT6H894,LU1072616219', 'LU1072616219')
+count 29
+<class 'tuple'>
+('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'GB0007188757')
+count 30
+<class 'tuple'>
+('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'GB00B1XZS820')
+count 31
+<class 'tuple'>
+('CWN8141H7042', 'NONE', 'NewRcrd', 'RGHT', 'SGAAccept 13 01 2020 Bkt of Shares', 'SGAAccept      /SGAAccept 13/01/202', 'RWXXXX', 'GBP', 'false', '5493007L4T6MD6B57L78', 'EMTF', 'true', datetime.datetime(2014, 1, 8, 15, 44, 49, 693000), datetime.datetime(2019, 3, 7, 23, 59, 59), 'LU', 'Bskt', 'ISIN', 'GB0007188757,GB00B1XZS820,JE00B4T3BW64', 'JE00B4T3BW64')
+count 32
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0000811801')
+count 33
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0002374006')
+count 34
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0002875804')
+count 35
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0007099541')
+count 36
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB0009252882')
+count 37
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B02L3W35')
+count 38
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B03MM408')
+count 39
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00B0SWJX34')
+count 40
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'GB00BKKMKR23')
+count 41
+<class 'tuple'>
+('EZ4R0Z3VRH65', 'NONE', 'NewRcrd', 'TRS', 'Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113', 'NA/Swaps Bskt Tot Rtn GBP 20201113', 'SEBTXE', 'GBP', 'false', 'W22LROWP2IHZNBB6K528', 'GSSI', 'false', datetime.datetime(2020, 11, 13, 12, 22, 19), datetime.datetime(2020, 11, 13, 23, 59), 'GB', 'Bskt', 'ISIN', 'GB0000811801,GB0002374006,GB0002875804,GB0007099541,GB0009252882,GB00B02L3W35,GB00B03MM408,GB00B0SWJX34,GB00BKKMKR23,JE00B4T3BW64', 'JE00B4T3BW64')
+b'\n                 update foo\n                    set\n                        a = coalesce(10, a), -- a is not nullable\n                        b = (array[b, 20])[1 + 1] -- b is nullable\n                    where id = 1\n                '
+Warehouse build completed
+0:00:00.066974
+Application completed

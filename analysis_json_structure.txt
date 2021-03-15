@@ -1,0 +1,50 @@
+{'fininstrmgnlattrbts_id': 'GB00J7W63F21',
+ 'industry_nm': 'NONE', 
+ 'type': 'NewRcrd', 
+ 
+ 'fininstrm_type': 'OPTN', 
+ 
+ 'fininstrmgnlattrbts_fullnm': 'RBS-NatWest Group plc (Std Option/Amer/Dlv)', 
+ 'fininstrmgnlattrbts_shrtnm': 'ICE/C OPT 20250516 AME RBS 1.6', 
+ 'fininstrmgnlattrbts_clssfctntp': 'OCASPS', 
+ 'fininstrmgnlattrbts_ntnlccy': 'GBP', 
+ 'fininstrmgnlattrbts_cmmdtyderivind': False, 
+ 
+ 'issr': '549300UF4R84F48NCH34', 
+ 
+ 'tradgvnrltdattrbts_id': 'IFLO', 
+ 'tradgvnrltdattrbts_issrreq': True, 
+ 'tradgvnrltdattrbts_frsttraddt': '2020-06-09T00:00:00.000Z', 
+ 'tradgvnrltdattrbts_termntndt': '2025-05-16T23:59:59.000Z', 
+ 
+ 'techattrbts_rlvntcmptntauthrty': 'GB', 
+ 
+ 'undlyng_type': 'Sngl', 
+ 'undlyng_subtype': 'ISIN', 
+ 'undlyng_isins': 'GB00B7T77214'}
+ 
+ 
+ ,{"fininstrmgnlattrbts_id":"EZ4R0Z3VRH65",
+ "industry_nm":"NONE",
+ "type":"NewRcrd",
+ 
+ "fininstrm_type":"TRS",
+ 
+ "fininstrmgnlattrbts_fullnm":"Equity Swap Price_Return_Basic_Performance_Basket Multiple ISINs GBP 20201113",
+ "fininstrmgnlattrbts_shrtnm":"NA/Swaps Bskt Tot Rtn GBP 20201113",
+ "fininstrmgnlattrbts_clssfctntp":"SEBTXE",
+ "fininstrmgnlattrbts_ntnlccy":"GBP",
+ "fininstrmgnlattrbts_cmmdtyderivind":false,
+ 
+ "issr":"W22LROWP2IHZNBB6K528",
+ 
+ "tradgvnrltdattrbts_id":"GSSI",
+ "tradgvnrltdattrbts_issrreq":false,
+ "tradgvnrltdattrbts_frsttraddt":"2020-11-13T12:22:19.000Z",
+ "tradgvnrltdattrbts_termntndt":"2020-11-13T23:59:00.000Z",
+ 
+ "techattrbts_rlvntcmptntauthrty":"GB",
+ 
+ "undlyng_type":"Bskt",
+ "undlyng_subtype":"ISIN",
+ "undlyng_isins":"GB00B0SWJX34,GB00B03MM408,GB0007099541,GB00B02L3W35,GB0009252882,JE00B4T3BW64,GB0002875804,GB0000811801,GB00BKKMKR23,GB0002374006"}
